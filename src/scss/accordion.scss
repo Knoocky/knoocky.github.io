@@ -1,0 +1,42 @@
+@use "variables";
+
+.accordion {
+  padding-left: 30px;
+
+  &--toggle {
+    display: flex;
+    align-items: center;
+    color: variables.$base-color;
+    font-size: 2rem;
+    justify-content: space-between;
+    padding: 20px 0;
+    text-decoration: none;
+    width: 100%;
+
+    &::after {
+      content: "+";
+      font-size: 3rem;
+    }
+
+    &.active {
+      border: none;
+
+      &::after {
+        content: "–";
+      }
+    }
+  }
+
+  &--content {
+    color: variables.$secondary-color;
+    font-size: 1.25rem;
+    height: 0;
+    overflow: hidden;
+
+    &.active {
+      display: block;
+      height: auto;
+      padding-bottom: 20px;
+    }
+  }
+}

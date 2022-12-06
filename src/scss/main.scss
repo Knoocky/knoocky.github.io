@@ -1,0 +1,19 @@
+@use 'variables';
+
+body {
+  color: variables.$base-color;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1600px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+h2 {
+  font-size: 52px;
+  font-weight: 400;
+  margin: 0;
+}
+
+section {
+  margin-top: 60px;
+}

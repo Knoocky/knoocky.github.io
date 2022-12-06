@@ -1,0 +1,33 @@
+@use "variables";
+
+.contacts {
+  margin-bottom: 60px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-left: 30px;
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      margin: 0;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    a {
+      color: variables.$secondary-color;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

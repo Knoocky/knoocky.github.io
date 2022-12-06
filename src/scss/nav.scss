@@ -1,0 +1,46 @@
+@use 'variables';
+
+.nav {
+  display: flex;
+  margin-top: 60px;
+  align-items: center;
+  justify-content: space-between;
+
+  &__links {
+    display: flex;
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+
+    li {
+      list-style: none;
+      margin-left: 1rem;
+    }
+
+    a {
+      color: variables.$company-color;
+      font-weight: 700;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__image {
+    margin-right: 10px;
+    max-width: 80px;
+  }
+
+  &__text {
+    font-weight: 400;
+    margin: 0;
+  }
+}

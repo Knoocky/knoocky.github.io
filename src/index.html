@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Благоустройство | Генеральное планирование</title>
+    <link rel="stylesheet" href="css/bundle.css" />
+    <link rel="stylesheet" href="css/splide.min.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="logo">
+        <img src="img/logo.jpg" class="logo__image" />
+        <h1 class="logo__text">Благоустройство | Генеральное планирование</h1>
+      </div>
+      <ul class="nav__links">
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#cooperation">Сотрудничество</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+    <section class="splide" aria-label="Splide Basic HTML Example">
+      <div class="splide__slider">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide"><img src="img/slide_1.JPG" /></li>
+            <li class="splide__slide"><img src="img/slide_2.jpg" /></li>
+            <li class="splide__slide"><img src="img/slide_3.jpg" /></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="services">
+      <div class="services__wrapper">
+        <h2>Услуги</h2>
+        <div class="accordion">
+          <a href="#services__content-1" class="accordion--toggle"
+            >Разработка дизайн-проектов благоустройства территорий</a
+          >
+          <div class="accordion--content" id="services__content-1">
+            Детальный проект, включающий разработку планировочной структуры,
+            подбор материалов и оборудования с предоставлением коммерческих
+            предложений на необходимые позиции. Тип объектов – жилые комплексы,
+            общественные территории.
+          </div>
+          <a href="#services__content-2" class="accordion--toggle"
+            >Сотрудничество с проектными организациями</a
+          >
+          <div class="accordion--content" id="services__content-2">
+            Выполнение разделов ПЗУ|ГП в рамках разработки эскизных проектов,
+            проектной и рабочей документации. заключение договора подряда
+          </div>
+          <a href="#services__content-3" class="accordion--toggle"
+            >Ландшафтное проектирование</a
+          >
+          <div class="accordion--content" id="services__content-3">
+            Проектирование эскизного проекта и рабочей документации генерального
+            плана, подбор материалов и предоставление КП в сотрудничестве с
+            дендрологами. Тип объектов – общественные территории, частные
+            домостроения
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cooperation" class="cooperation">
+      <h2>Сотрудничество</h2>
+      <div class="accordion">
+        <a href="#cooperation__content-1" class="accordion--toggle"
+          >Девелоперы и застройщики</a
+        >
+        <div class="accordion--content" id="cooperation__content-1">
+          Сотрудничество с крупными игроками строительного рынка
+          г.Екатеринбурга. портфолио работ предоставляется по запросу
+        </div>
+        <a href="#cooperation__content-2" class="accordion--toggle"
+          >Проектные организации</a
+        >
+        <div class="accordion--content" id="cooperation__content-2">
+          Сотрудничество с заключением договора подряда на выполнение
+          необходимого объема работ в рамках генерального планирования
+          территорий
+        </div>
+        <a href="#cooperation__content-3" class="accordion--toggle"
+          >Частные заказчики</a
+        >
+        <div class="accordion--content" id="cooperation__content-3">
+          Работа с частными ландшафтами загородного жилья, оказание
+          консультативных услуг
+        </div>
+      </div>
+    </section>
+    <section id="contacts" class="contacts">
+      <h2>Контакты</h2>
+			<div class="contacts__content">
+				<div class="contacts__links">
+					<a href="mailto:ablagoproject@gmail.com">ablagoproject@gmail.com</a>
+					<a href="tel:+79193699087">+7 919 369 90 87</a>
+				</div>
+				<p>Анастасия <br/> Белоусова</p>
+			</div>
+    </section>
+  </body>
+
+  <script src="js/accordion.js"></script>
+  <script src="js/splide.min.js"></script>
+  <script>
+    new Splide(".splide", {
+      type: "loop",
+      autoplay: "play",
+      interval: 5000,
+      pagination: false,
+      arrows: false,
+    }).mount();
+  </script>
+</html>

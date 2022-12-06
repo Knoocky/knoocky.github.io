@@ -1,0 +1,10 @@
+.splide {
+  &__slide {
+		max-height: 800px;
+		overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+}
