@@ -21,6 +21,24 @@
         <li><a href="#cooperation">Сотрудничество</a></li>
         <li><a href="#contacts">Контакты</a></li>
       </ul>
+
+      <div id="burger-menu">
+        <div id="burger-menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="burger-menu-nav" id="burger-menu-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav> 
+      </div>
+      
+      <div class="burger-menu-bg" id="burger-menu-bg"></div>
     </nav>
     <section class="splide" aria-label="Splide Basic HTML Example">
       <div class="splide__slider">
@@ -114,5 +132,12 @@
       pagination: false,
       arrows: false,
     }).mount();
+  </script>
+  <script>
+    function menuOnClick() {
+      document.getElementById("burger-menu-bar").classList.toggle("changed");
+      document.getElementById("burger-menu-nav").classList.toggle("changed");
+      document.getElementById("burger-menu-bg").classList.toggle("changed-bg");
+    }
   </script>
 </html>

@@ -6,14 +6,28 @@ body {
   max-width: 1600px;
   margin: auto;
   padding: 0 30px;
+  position: relative;
 }
 
 h2 {
   font-size: 52px;
   font-weight: 400;
   margin: 0;
+
+  @media screen and (max-width: variables.$tablet) {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: variables.$mobile) {
+    font-size: 32px;
+  }
 }
 
 section {
   margin-top: 60px;
+
+  @media screen and (max-width: variables.$tablet) {
+    margin-top: 20px;
+  }
+
 }

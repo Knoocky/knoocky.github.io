@@ -1,10 +1,22 @@
+@use 'variables';
+
 .splide {
+  @media screen and (max-width: variables.$mobile) {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+
   &__slide {
 		max-height: 800px;
 		overflow: hidden;
 
     img {
       width: 100%;
+
+      @media screen and (max-width: variables.$mobile) {
+        width: 768px;
+        margin-left: -190px;
+      }
     }
   }
 }

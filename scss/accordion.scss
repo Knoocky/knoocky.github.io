@@ -3,19 +3,28 @@
 .accordion {
   padding-left: 30px;
 
+  @media screen and (max-width: variables.$mobile) {
+    padding-left: 0;
+  }
+
   &--toggle {
     display: flex;
     align-items: center;
     color: variables.$base-color;
-    font-size: 2rem;
+    font-size: 2em;
     justify-content: space-between;
     padding: 20px 0;
     text-decoration: none;
     width: 100%;
 
+    @media screen and (max-width: variables.$mobile) {
+      font-size: 1.2em;
+    }
+
     &::after {
       content: "+";
-      font-size: 3rem;
+      font-size: 2em;
+      margin-left: 20px;
     }
 
     &.active {
@@ -29,9 +38,13 @@
 
   &--content {
     color: variables.$secondary-color;
-    font-size: 1.25rem;
+    font-size: 1.25em;
     height: 0;
     overflow: hidden;
+
+    @media screen and (max-width: variables.$mobile) {
+      font-size: 1em;
+    }
 
     &.active {
       display: block;
