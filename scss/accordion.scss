@@ -17,6 +17,10 @@
     text-decoration: none;
     width: 100%;
 
+    @media screen and (max-width: variables.$tablet) {
+      font-size: 1.5em;
+    }
+
     @media screen and (max-width: variables.$mobile) {
       font-size: 1.2em;
     }
